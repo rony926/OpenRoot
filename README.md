@@ -1,4 +1,3 @@
-# Apache_mod_ssl-_2.8.7-_Remote-Buffer-Overflow
 # OpenRoot
 ## Usage
 
