@@ -1198,9 +1198,9 @@ void get_server_error(ssl_conn* ssl)
 void usage(char* argv0)
 {
 	int i;
-	printf(": Usage: %s target box [port] [-c N]\n\n", argv0);
-	printf("  target - supported box eg: 0x00\n");
-	printf("  box - hostname or IP address\n");
+	printf(": Usage: %s box target_ip [port] [-c N]\n\n", argv0);
+	printf("  box - supported box eg: 0x00\n");
+	printf("  target_ip - hostname or IP address\n");
 	printf("  port - port for ssl connection\n");
 	printf("  -c open N connections. (use range 40-50 if u dont know)\n");
 	printf("  \n\n");
@@ -1289,6 +1289,3 @@ int main(int argc, char* argv[])
 	close(ssl1->sock);
 	return 0;
 }
-/* spabam: It isn't 0day */
-
-// milw0rm.com [2003-04-04]
