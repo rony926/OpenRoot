@@ -12,7 +12,7 @@ echo "localhost is running ...."
 sleep 2
 echo "Tunnel is running ...."
 ./geturl.sh &
-sleep 5
+sleep 10
 echo "Script is loading ...."
 ./mod.sh &
 
