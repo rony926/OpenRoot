@@ -1,27 +1,18 @@
 
-get_serveo_url() {
+set_ssh_url() {
 
-  	# Assign arguments to variables
-
-	file="OpenR00t.c"
-	search_word="MY_LOCALHOST"
-	replace_word=$(sed -n '1p' myip.txt)
-
-	# echo "$replace_word"
-
-	# Check if the file exists
-	if [ ! -f "$file" ]; then
-	  echo "Error: File '$file' not found!"
+	c_file="OpenR00t.c"
+	localhost_tag="MY_LOCALHOST"
+	ssh_ip=$(sed -n '1p' myip.txt)
+	# echo "$ssh_ip"
+	if [ ! -f "$c_file" ]; then
+	  echo "Error: File '$c_file' not found!"
 	  exit 1
 	fi
-
-	# Replace the word in the file
-	sed -i "s|$search_word|$replace_word|g" "$file"
-
-
+	sed -i "s|$localhost_tag|$ssh_ip|g" "$c_file"
 }
 
 # Call the function
-get_serveo_url
+set_ssh_url
 
 
