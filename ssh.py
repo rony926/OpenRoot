@@ -1,7 +1,7 @@
 import subprocess
 import re
 
-def get_localhost_run_url(port=9000):
+def get_url(port=9000):
     try:
         # Command to start the SSH tunnel
         # command = [
@@ -21,7 +21,7 @@ def get_localhost_run_url(port=9000):
         
         # Read the output for the URL
         for line in process.stdout:
-            print(line, end="")  # Optional: Print the output
+            print(line, end="")  
             match = re.search(r"https?://[^\s]+", line)
             if match:
                 inf = match.group(0)
@@ -38,6 +38,6 @@ def get_localhost_run_url(port=9000):
 
 # Example usage
 if __name__ == "__main__":
-    url = get_localhost_run_url(port=9000)
+    url = get_url(port=9000)
     print(f"Your public URL is: {url} \n")
 
