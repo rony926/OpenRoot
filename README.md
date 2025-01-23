@@ -28,5 +28,5 @@ chmod +x h4kliv3.sh
 
 for example:
 ```
-./OpenRoot 0x6b 192.168.80.145 443 -c 40
+./OpenR00t 0x6b 192.168.80.145 443 -c 40
 ```
