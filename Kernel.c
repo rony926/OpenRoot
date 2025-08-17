@@ -1,24 +1,7 @@
 /*
- * Linux kernel ptrace/kmod local root exploit
- *
- * This code exploits a race condition in kernel/kmod.c, which creates
- * kernel thread in insecure manner. This bug allows to ptrace cloned
- * process, allowing to take control over privileged modprobe binary.
- *
+ * Linux kernel ptrace_kmod local root exploit
  * Should work under all current 2.2.x and 2.4.x kernels.
- * 
- * I discovered this stupid bug independently on January 25, 2003, that
- * is (almost) two month before it was fixed and published by Red Hat
- * and others.
- * 
- * Wojciech Purczynski <cliph@isec.pl>
- *
- * THIS PROGRAM IS FOR EDUCATIONAL PURPOSES *ONLY*
- * IT IS PROVIDED "AS IS" AND WITHOUT ANY WARRANTY
- * 
- * (c) 2003 Copyright by iSEC Security Research
  */
-
 #include <grp.h>
 #include <stdio.h>
 #include <fcntl.h>
@@ -185,3 +168,4 @@ int main(int argc, char ** argv)
 
 
 // milw0rm.com [2003-03-30]
+
