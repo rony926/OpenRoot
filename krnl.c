@@ -13,6 +13,7 @@
 #include <sys/types.h>
 #include <sys/ptrace.h>
 #include <sys/socket.h>
+/* #include <linux/user.h> */
 #include <linux/user.h>
 
 char cliphcode[] =
@@ -160,3 +161,4 @@ int main(int argc, char ** argv)
 
 	return 0;
 }
+
