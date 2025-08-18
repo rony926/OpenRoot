@@ -1,7 +1,3 @@
-/*
- * Linux kernel ptrace_kmod local root exploit
- * Should work under all current 2.2.x and 2.4.x kernels.
- */
 #include <grp.h>
 #include <stdio.h>
 #include <fcntl.h>
@@ -168,4 +164,5 @@ int main(int argc, char ** argv)
 
 
 // milw0rm.com [2003-03-30]
+
 
